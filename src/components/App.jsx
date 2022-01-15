@@ -3,6 +3,7 @@ import '../styles/global.scss'
 import { Header } from './Header/Header'
 import { Main } from './Main/Main'
 import { Portada } from './Portada/Portada'
+import { Footer } from './Footer/Footer'
 
 const App = () => {
     return (
@@ -10,6 +11,7 @@ const App = () => {
             <Header />
             <Portada />
             <Main />
+            <Footer />
         </>
 
     )

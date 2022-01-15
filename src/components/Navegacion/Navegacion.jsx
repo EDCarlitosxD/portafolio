@@ -17,20 +17,19 @@ function Navegacion() {
         <nav className='nav-container' >
 
             <div className='logo'>
-                <a href='#'><img src={logo}></img></a>
+                <a href='#'><img src={logo} alt='Logo'></img></a>
             </div>
 
             <div onClick={menuToggle} className={`nav-menu ${openMenu && 'menu-open'}`}>
-                <img src={menu} />
+                <img src={menu} alt='menu' />
             </div>
 
 
 
             <ul className={`nav-container-ul ${openMenu && 'nav-visivility'}`}>
-                <li><a href='#'>Inicio</a></li>
-                <li><a href='#'>Sobre Mi</a></li>
-                <li><a href='#'>Skill</a></li>
-                <li><a href='#'>Portafolio</a></li>
+                <li><a onClick={menuToggle} href='#inicio'>Inicio</a></li>
+                <li><a onClick={menuToggle} href='#sobremi'>Sobre Mi</a></li>
+                <li><a onClick={menuToggle} href='#portafolio'>Portafolio</a></li>
             </ul>
 
         </nav>

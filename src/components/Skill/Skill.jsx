@@ -1,4 +1,7 @@
 import React from 'react';
+import '../../styles/Skill.scss'
+
+
 import html from '../../assets/html.svg';
 import css from '../../assets/css.svg';
 import javascript from '../../assets/javascript-js.svg';
@@ -17,7 +20,7 @@ import { ItemSkill } from './ItemSkill';
 
 
 
-const skill = [
+const skills = [
     { nombre: 'Html5', icon: html },
     { nombre: 'Css', icon: css },
     { nombre: 'Javascript', icon: javascript },
@@ -31,9 +34,16 @@ const skill = [
 
 function Skill() {
     return (
-        <section>
-            <h2 className='text-center titulo'>Mis Skill</h2>
-            <ItemSkill />
+        <section >
+            <h2 className='t-skill text-center titulo'>Mis Skill</h2>
+
+            <div className='skill-container'>
+                {skills.map(ski => (
+                    <ItemSkill key={ski.nombre} src={ski.icon} nombre={ski.nombre} />
+                ))}
+            </div>
+
+
         </section>
     )
 }

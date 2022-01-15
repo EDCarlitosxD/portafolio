@@ -3,7 +3,7 @@ import '../../styles/Portada.scss'
 import portada from '../../assets/portada.svg'
 function Portada() {
     return (
-        <section className='portada'>
+        <section id='inicio' className='portada'>
 
             <div className='presentacion'>
                 <h1 className='titulo'>Juan Carlos Uch Dzib</h1>
@@ -12,7 +12,7 @@ function Portada() {
 
 
             <div className='portada-img'>
-                <img src={portada} />
+                <img src={portada} alt='Portada' />
             </div>
 
         </section>

@@ -1,0 +1,6 @@
+@use "./vars" as v;
+.header {
+  background-color: v.$color-background;
+  position: sticky;
+  top: -1px;
+}

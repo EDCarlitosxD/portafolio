@@ -1,0 +1,51 @@
+@use "./vars" as v;
+
+.portafolio-item-container {
+  margin: 40px 0;
+}
+
+.portafolio-item-img {
+  width: 95%;
+  min-width: 280px;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 300px;
+  position: relative;
+  border: 1px solid v.$color-terciario;
+  img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.portafolio-github {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: v.$color-background;
+  opacity: 0.9;
+}
+
+.portafolio-github div {
+  width: 100%;
+  height: 40px;
+  margin: 2px;
+  img {
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.text-color {
+  color: v.$color-titulo;
+}
+
+.tecnologias {
+  display: flex;
+}

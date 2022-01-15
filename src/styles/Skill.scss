@@ -1,0 +1,12 @@
+@use "./vars" as v;
+
+.skill-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.t-skill {
+  margin-top: 50px;
+}
