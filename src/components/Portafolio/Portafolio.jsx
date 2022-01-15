@@ -40,11 +40,13 @@ function Portafolio() {
 
             <h2 className='text-center titulo margin'>Portafolio</h2>
 
+            <div className='portafolio-items'>
+                {portafolioArray.map(port => (
+                    <PortafolioItem key={port.nombre} link={port.link} github={port.github} tecnologias={port.tecnologias} src={port.imagen} />
+                ))}
+            </div>
 
 
-            {portafolioArray.map(port => (
-                <PortafolioItem key={port.nombre} link={port.link} github={port.github} tecnologias={port.tecnologias} src={port.imagen} />
-            ))}
 
         </section>
     )

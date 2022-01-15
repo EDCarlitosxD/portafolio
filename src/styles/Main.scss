@@ -1,0 +1,7 @@
+@media (min-width: 768px) {
+  .sobre-skill {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: flex-end;
+  }
+}
