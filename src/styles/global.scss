@@ -1,0 +1,32 @@
+@use "./vars" as v;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  background-color: v.$color-background;
+}
+
+.txt {
+  color: v.$color-texto;
+  font-size: 1.7rem;
+}
+.titulo {
+  color: v.$color-titulo;
+  font-size: 2.6rem;
+}
+.text-center {
+  text-align: center;
+}
+
+img {
+  color: white;
+}

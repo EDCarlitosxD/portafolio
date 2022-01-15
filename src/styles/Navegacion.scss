@@ -1,0 +1,70 @@
+@use "./vars" as v;
+
+// Defecto
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  margin: 10px;
+  transform: rotate(0deg);
+  transition: 1s;
+  img {
+    filter: contrast(0.1%);
+  }
+}
+//------------------------------------
+.nav-container-ul {
+  display: none;
+}
+// Abre el menu
+.nav-visivility {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  background-color: #0d0d0d;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  li {
+    margin: 15px;
+    a {
+      text-decoration: none;
+      color: v.$color-titulo;
+      margin: 20px;
+      padding: 15px;
+    }
+    a:hover {
+      background-color: v.$color-btn;
+      border-radius: 10px;
+    }
+  }
+}
+
+.menu-open {
+  transform: rotate(90deg);
+  transition: 1s;
+}

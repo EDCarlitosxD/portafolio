@@ -1,0 +1,26 @@
+@use "./vars" as v;
+
+.portada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 550px;
+}
+
+.presentacion {
+  margin-top: 5px;
+  text-align: center;
+}
+.presentacion h1 {
+  margin: 5px 0;
+}
+.portada-img {
+  width: 100%;
+  min-width: 280px;
+  max-width: 700px;
+  height: 400px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
